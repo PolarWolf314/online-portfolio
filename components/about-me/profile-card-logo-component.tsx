@@ -8,7 +8,7 @@ import { FaDiscord } from "react-icons/fa";
 
 const ProfileCardLogoComponent = () => {
     return (
-        <div>
+        <div className="flex gap-x-5 text-2xl">
             <span>
                 <AiOutlineGithub />
             </span>
