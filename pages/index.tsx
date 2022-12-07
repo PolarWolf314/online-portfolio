@@ -1,7 +1,9 @@
+import AboutMe from "../components/about-me";
+
 export default function Home() {
   return (
-    <div className='text-3xl'>
-      hello world
+    <div className="mx-5">
+      <AboutMe />
     </div>
   )
 }
