@@ -1,11 +1,29 @@
+import {
+    AiOutlineGithub,
+    AiFillLinkedin,
+    AiOutlineMail,
+    AiOutlineFilePdf,
+} from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
+
 const ProfileCardLogoComponent = () => {
     return (
         <div>
-            <span>Github Logo</span>
-            <span>Discord Logo</span>
-            <span>Mail Logo</span>
-            <span>LinkedIn Logo</span>
-            <span>PDF Logo</span>
+            <span>
+                <AiOutlineGithub />
+            </span>
+            <span>
+                <FaDiscord />
+            </span>
+            <span>
+                <AiOutlineMail />
+            </span>
+            <span>
+                <AiFillLinkedin />
+            </span>
+            <span>
+                <AiOutlineFilePdf />
+            </span>
         </div>
     );
 };
