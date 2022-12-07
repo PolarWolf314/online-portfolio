@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import AboutMe from "../components/about-me";
 import NavBar from "../components/nav-bar";
+import TechnicalSkills from "../components/technical-skills";
 import { MyMenuContext } from "../contexts/menu-context";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <NavBar />
             <div className="mx-5">
                 <AboutMe />
+                <TechnicalSkills />
             </div>
         </MyMenuContext.Provider>
     );
