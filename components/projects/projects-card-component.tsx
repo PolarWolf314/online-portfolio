@@ -1,7 +1,22 @@
-const ProjectsCardComponent = () => {
+const ProjectsCardComponent = ({
+    title,
+    date,
+    content,
+    skills,
+}: {
+    title: string;
+    date: string;
+    content: any;
+    skills: any;
+}) => {
     return (
         <div>
-            <div>THIS IS A PROJECT CARD COMPONENT</div>
+            <div>
+                <span>{title}</span>
+                <span>{date}</span>
+            </div>
+            <div>{content}</div>
+            <div>{skills}</div>
         </div>
     );
 };
