@@ -1,9 +1,13 @@
 import AboutMe from "../components/about-me";
+import NavBar from "../components/nav-bar";
 
 export default function Home() {
-  return (
-    <div className="mx-5">
-      <AboutMe />
-    </div>
-  )
+    return (
+        <>
+        <NavBar />
+            <div className="mx-5">
+                <AboutMe />
+            </div>
+        </>
+    );
 }
