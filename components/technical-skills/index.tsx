@@ -11,6 +11,18 @@ import bashLogo from "../../assets/logos/bash-logo.svg";
 import nodejsLogo from "../../assets/logos/nodejs-logo.svg";
 import jsLogo from "../../assets/logos/js-logo.svg";
 import tsLogo from "../../assets/logos/ts-logo.svg";
+import nginxLogo from "../../assets/logos/nginx-logo.svg";
+import cloudflareLogo from "../../assets/logos/cloudflare-logo.svg";
+import firebaseLogo from "../../assets/logos/firebase-logo.svg";
+import mongodbLogo from "../../assets/logos/mongodb-logo.svg";
+import matlabLogo from "../../assets/logos/matlab-logo.svg";
+import rLogo from "../../assets/logos/r-logo.svg";
+import clogo from "../../assets/logos/c-logo.svg";
+import githubLogo from "../../assets/logos/github-logo.svg";
+import gitLogo from "../../assets/logos/git-logo.svg";
+import markdownLogo from "../../assets/logos/markdown-logo.svg";
+import latexLogo from "../../assets/logos/latex-logo.svg";
+import mavenLogo from "../../assets/logos/maven-logo.svg";
 
 const TechnicalSkills = () => {
     return (
@@ -74,6 +86,82 @@ const TechnicalSkills = () => {
                             <TechnicalSkillsItemComponent
                                 logo={tsLogo}
                                 name="TypeScript"
+                            />
+                        </>
+                    }
+                />
+                <TechnicalSkillsCardComponent
+                    categoryName="DevOps"
+                    items={
+                        <>
+                            <TechnicalSkillsItemComponent
+                                logo={nginxLogo}
+                                name="nginx"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={cloudflareLogo}
+                                name="Cloudflare"
+                            />
+                        </>
+                    }
+                />
+                <TechnicalSkillsCardComponent
+                    categoryName="Database"
+                    items={
+                        <>
+                            <TechnicalSkillsItemComponent
+                                logo={firebaseLogo}
+                                name="Firebase"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={mongodbLogo}
+                                name="MongoDB"
+                            />
+                        </>
+                    }
+                />
+                <TechnicalSkillsCardComponent
+                    categoryName="Non-Web Technologies"
+                    items={
+                        <>
+                            <TechnicalSkillsItemComponent
+                                logo={matlabLogo}
+                                name="Matlab"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={rLogo}
+                                name="R"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={clogo}
+                                name="C"
+                            />
+                        </>
+                    }
+                />
+                <TechnicalSkillsCardComponent
+                    categoryName="Tools"
+                    items={
+                        <>
+                            <TechnicalSkillsItemComponent
+                                logo={githubLogo}
+                                name="GitHub"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={gitLogo}
+                                name="Git"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={markdownLogo}
+                                name="Markdown"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={latexLogo}
+                                name="LaTeX"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={mavenLogo}
+                                name="Maven"
                             />
                         </>
                     }
