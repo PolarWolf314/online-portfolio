@@ -1,18 +1,16 @@
+import ProfileCardLogoComponent from "./profile-card-logo-component";
+
 const ProfileCardComponent = () => {
-    return ( 
+    return (
         <>
-            <div>
-                Profile Picture
-            </div>
-            <div>
-                Aaron Guo
-            </div>
+            <div>Profile Picture</div>
+            <div>Aaron Guo</div>
             <div>Second Year Software Engineering Student</div>
             <div>
-                logos
+                <ProfileCardLogoComponent />
             </div>
         </>
-     );
-}
- 
+    );
+};
+
 export default ProfileCardComponent;
