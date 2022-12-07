@@ -1,6 +1,9 @@
 import TechnicalSkillsItemComponent from "./technical-skills-item-component";
 import TechnicalSkillsCardComponent from "./technical-skills-card-component";
-import bashLogo from "../../assets/logos/bash-logo.svg";
+import reactLogo from "../../assets/logos/react-logo.svg";
+import nextjsLogo from "../../assets/logos/nextjs-logo.svg";
+import tailwindcssLogo from "../../assets/logos/tailwindcss-logo.svg";
+import figmaLogo from "../../assets/logos/figma-logo.svg";
 
 const TechnicalSkills = () => {
     return (
@@ -12,20 +15,20 @@ const TechnicalSkills = () => {
                     items={
                         <>
                             <TechnicalSkillsItemComponent
-                                logo={bashLogo}
-                                name="Bash"
+                                logo={reactLogo}
+                                name="React"
                             />
                             <TechnicalSkillsItemComponent
-                                logo={bashLogo}
-                                name="Bash"
+                                logo={nextjsLogo}
+                                name="Next.js"
                             />
                             <TechnicalSkillsItemComponent
-                                logo={bashLogo}
-                                name="Bash"
+                                logo={tailwindcssLogo}
+                                name="Tailwind CSS"
                             />
                             <TechnicalSkillsItemComponent
-                                logo={bashLogo}
-                                name="Bash"
+                                logo={figmaLogo}
+                                name="Figma"
                             />
                         </>
                     }
