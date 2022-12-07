@@ -1,6 +1,12 @@
 import Link from "next/link";
 
+import { useMenuContext } from "../../contexts/menu-context";
+
 const NavBarMenuComponent = ({ isOpen }: { isOpen: boolean }) => {
+    const { isMenuOpen, setIsMenuOpen } = useMenuContext();
+    const onClickHandler = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <div
             className={`fixed w-full top-[51px] overflow-hidden z-10
@@ -11,13 +17,19 @@ const NavBarMenuComponent = ({ isOpen }: { isOpen: boolean }) => {
             }`}
         >
             <div>
-                <Link href="/">ABOUT ME</Link>
+                <Link href="/" onClick={onClickHandler}>
+                    ABOUT ME
+                </Link>
             </div>
             <div>
-                <Link href="/">SKILLS</Link>
+                <Link href="/" onClick={onClickHandler}>
+                    SKILLS
+                </Link>
             </div>
             <div>
-                <Link href="/">PROJECTS</Link>
+                <Link href="/" onClick={onClickHandler}>
+                    PROJECTS
+                </Link>
             </div>
         </div>
     );
