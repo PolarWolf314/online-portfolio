@@ -1,9 +1,14 @@
 import TechnicalSkillsItemComponent from "./technical-skills-item-component";
 import TechnicalSkillsCardComponent from "./technical-skills-card-component";
+
 import reactLogo from "../../assets/logos/react-logo.svg";
 import nextjsLogo from "../../assets/logos/nextjs-logo.svg";
 import tailwindcssLogo from "../../assets/logos/tailwindcss-logo.svg";
 import figmaLogo from "../../assets/logos/figma-logo.svg";
+import javaLogo from "../../assets/logos/java-logo.svg";
+import pythonLogo from "../../assets/logos/python-logo.svg";
+import bashLogo from "../../assets/logos/bash-logo.svg";
+import nodejsLogo from "../../assets/logos/nodejs-logo.svg";
 
 const TechnicalSkills = () => {
     return (
@@ -29,6 +34,29 @@ const TechnicalSkills = () => {
                             <TechnicalSkillsItemComponent
                                 logo={figmaLogo}
                                 name="Figma"
+                            />
+                        </>
+                    }
+                />
+                <TechnicalSkillsCardComponent
+                    categoryName="Back End"
+                    items={
+                        <>
+                            <TechnicalSkillsItemComponent
+                                logo={javaLogo}
+                                name="Java"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={pythonLogo}
+                                name="Python"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={bashLogo}
+                                name="Bash/ZSH"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={nodejsLogo}
+                                name="Node.js"
                             />
                         </>
                     }
