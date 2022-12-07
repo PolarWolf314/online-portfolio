@@ -9,6 +9,8 @@ import javaLogo from "../../assets/logos/java-logo.svg";
 import pythonLogo from "../../assets/logos/python-logo.svg";
 import bashLogo from "../../assets/logos/bash-logo.svg";
 import nodejsLogo from "../../assets/logos/nodejs-logo.svg";
+import jsLogo from "../../assets/logos/js-logo.svg";
+import tsLogo from "../../assets/logos/ts-logo.svg";
 
 const TechnicalSkills = () => {
     return (
@@ -57,6 +59,21 @@ const TechnicalSkills = () => {
                             <TechnicalSkillsItemComponent
                                 logo={nodejsLogo}
                                 name="Node.js"
+                            />
+                        </>
+                    }
+                />
+                <TechnicalSkillsCardComponent
+                    categoryName="Full Stack"
+                    items={
+                        <>
+                            <TechnicalSkillsItemComponent
+                                logo={jsLogo}
+                                name="JavaScript"
+                            />
+                            <TechnicalSkillsItemComponent
+                                logo={tsLogo}
+                                name="TypeScript"
                             />
                         </>
                     }
