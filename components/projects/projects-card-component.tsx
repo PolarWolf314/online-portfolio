@@ -1,3 +1,5 @@
+import Badges from "../badges";
+
 const ProjectsCardComponent = ({
     title,
     date,
@@ -17,7 +19,7 @@ const ProjectsCardComponent = ({
             </div>
             <div className="text-justify bg-gradient-to-br from-fuchsia-50 to-blue-50 border-t border-slate-300 rounded-b-md px-4 pt-2 pb-2">
                 {content}
-                <div>{skills}</div>
+                <div><Badges badges={skills} className="flex-wrap-reverse justify-end" /></div>
             </div>
         </div>
     );

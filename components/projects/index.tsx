@@ -16,7 +16,7 @@ const Projects = () => {
                         other projects.
                     </>
                 }
-                skills={<>React</>}
+                skills={['react', ]}
             />
             <ProjectsCardComponent
                 title="React Websites"
@@ -30,7 +30,7 @@ const Projects = () => {
                         other projects.
                     </>
                 }
-                skills={<>React</>}
+                skills={['react']}
             />
         </div>
     );
