@@ -17,9 +17,9 @@ const ProjectsCardComponent = ({
                 <h3 className="font-bold">{title}</h3>
                 <span className="text-slate-500">{date}</span>
             </div>
-            <div className="text-justify bg-gradient-to-br from-fuchsia-50 to-blue-50 border-t border-slate-300 rounded-b-md px-4 pt-2 pb-2">
+            <div className="bg-gradient-to-br from-fuchsia-50 to-blue-50 border-t border-slate-300 rounded-b-md px-4 pt-2 pb-2">
                 {content}
-                <div><Badges badges={skills} className="flex-wrap-reverse justify-end" /></div>
+                <div className="pt-2"><Badges badges={skills} className="flex-wrap-reverse justify-end" /></div>
             </div>
         </div>
     );

@@ -22,6 +22,11 @@ const BadgeUrl: Record<string, string> = {
     nextjs: "https://img.shields.io/badge/next.js-%23000000.svg?&style=for-the-badge&logo=next.js&logoColor=white",
     firebase:
         "https://img.shields.io/badge/firebase-%23FFCA28.svg?&style=for-the-badge&logo=firebase&logoColor=black",
+    cloudflare:
+        "https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white",
+    ubuntu: "https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white",
+    figma: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white",
+    github: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white",
 };
 
 export default BadgeUrl;
