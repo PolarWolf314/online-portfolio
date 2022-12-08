@@ -2,8 +2,8 @@ import ProjectsCardComponent from "./projects-card-component";
 
 const Projects = () => {
     return (
-        <div className="flex flex-col gap-4">
-            <h2>Projects</h2>
+        <div className="flex flex-col gap-4 py-8">
+            <h2 className="self-center font-bold text-xl">Projects</h2>
             <ProjectsCardComponent
                 title="React Websites"
                 link="https://polarwolf314-react-projects-02.netlify.app"

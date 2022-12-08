@@ -1,3 +1,4 @@
+import { AiOutlineLink } from "react-icons/ai";
 import Badges from "../badges";
 
 const ProjectsCardComponent = ({
@@ -18,7 +19,10 @@ const ProjectsCardComponent = ({
             <div className="flex flex-row justify-between mt-2.5 px-1.5">
                 <h3 className={`${link ? "hover:underline" : ""} font-bold`}>
                     <a href={link} target="_blank" rel="noreferrer">
-                        {title}
+                        <span className="flex flex-row items-center gap-1">
+                            <AiOutlineLink className={`${link ? "" : "hidden"}`}/>
+                            {title}
+                        </span>
                     </a>
                 </h3>
                 <span className="text-slate-500">{date}</span>
