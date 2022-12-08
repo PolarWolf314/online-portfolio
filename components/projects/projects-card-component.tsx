@@ -2,11 +2,13 @@ import Badges from "../badges";
 
 const ProjectsCardComponent = ({
     title,
+    link,
     date,
     content,
     skills,
 }: {
     title: string;
+    link?: string;
     date: string;
     content: any;
     skills: any;
@@ -14,12 +16,21 @@ const ProjectsCardComponent = ({
     return (
         <div className="flex flex-col gap-y-3 bg-gradient-to-br from-fuchsia-100 to-blue-100 rounded-md drop-shadow-lg">
             <div className="flex flex-row justify-between mt-2.5 px-1.5">
-                <h3 className="font-bold">{title}</h3>
+                <h3 className={`${link ? "hover:underline" : ""} font-bold`}>
+                    <a href={link} target="_blank" rel="noreferrer">
+                        {title}
+                    </a>
+                </h3>
                 <span className="text-slate-500">{date}</span>
             </div>
             <div className="bg-gradient-to-br from-fuchsia-50 to-blue-50 border-t border-slate-300 rounded-b-md px-4 pt-2 pb-2">
                 {content}
-                <div className="pt-2"><Badges badges={skills} className="flex-wrap-reverse justify-end" /></div>
+                <div className="pt-2">
+                    <Badges
+                        badges={skills}
+                        className="flex-wrap-reverse justify-end"
+                    />
+                </div>
             </div>
         </div>
     );

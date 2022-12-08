@@ -6,6 +6,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <ProjectsCardComponent
                 title="React Websites"
+                link="https://polarwolf314-react-projects-02.netlify.app"
                 date="Dec 2021"
                 content={
                     <>
@@ -20,6 +21,7 @@ const Projects = () => {
             />
             <ProjectsCardComponent
                 title="E-Commerce App (WIP)"
+                link="https://polarwolf314-ecommerce.netlify.app"
                 date="Dec 2021"
                 content={
                     <>
@@ -70,6 +72,7 @@ const Projects = () => {
             />
             <ProjectsCardComponent
                 title="Avondale Taekwon Do"
+                link="https://polarwolf314.github.io/AvondaleTKD/"
                 date="Nov 2021"
                 content={
                     <>
