@@ -1,11 +1,9 @@
-import { useState } from "react";
-
 import { AiOutlineMenu } from "react-icons/ai";
 import NavBarMenuComponent from "./nav-bar-menu-component";
 import { useMenuContext } from "../../contexts/menu-context";
 
 const NavBar = () => {
-    const {isMenuOpen, setIsMenuOpen} = useMenuContext();
+    const { isMenuOpen, setIsMenuOpen } = useMenuContext();
     const onClickHandler = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -17,8 +15,8 @@ const NavBar = () => {
                     isMenuOpen ? "bg-fuchsia-200" : "bg-fuchsia-400"
                 }`}
             >
-                <span className="text-3xl font-bold">TITLE</span>
-                <span className="text-3xl self-center">
+                <span className="text-3xl font-bold">Aaron Guo</span>
+                <span className="text-3xl self-center cursor-pointer">
                     <AiOutlineMenu onClick={onClickHandler} />
                 </span>
             </div>
