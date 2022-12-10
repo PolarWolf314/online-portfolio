@@ -21,7 +21,12 @@ const NavBarMenuComponent = ({ isOpen }: { isOpen: boolean }) => {
                     onClick={onClickHandler}
                     className="bg-gradient-to-br from-fuchsia-100 to-blue-100 border border-b-fuchsia-300 border-r-fuchsia-300 h-10 w-10/12 flex items-center px-4 rounded-lg cursor-pointer"
                 >
-                    <Link href="#About-Me" className="text-xl font-medium w-full">
+                    <Link
+                        href="#About-Me"
+                        scroll={false}
+                        replace={true}
+                        className="text-xl font-medium w-full"
+                    >
                         <span>About Me</span>
                     </Link>
                 </div>
@@ -29,7 +34,12 @@ const NavBarMenuComponent = ({ isOpen }: { isOpen: boolean }) => {
                     onClick={onClickHandler}
                     className="bg-gradient-to-br from-fuchsia-100 to-blue-100 border border-b-fuchsia-300 border-r-fuchsia-300 h-10 w-10/12 flex items-center px-4 rounded-lg cursor-pointer"
                 >
-                    <Link href="#Skills" className="text-xl font-medium w-full">
+                    <Link
+                        href="#Skills"
+                        scroll={false}
+                        replace={true}
+                        className="text-xl font-medium w-full"
+                    >
                         <span>Skills</span>
                     </Link>
                 </div>
@@ -37,7 +47,12 @@ const NavBarMenuComponent = ({ isOpen }: { isOpen: boolean }) => {
                     onClick={onClickHandler}
                     className="bg-gradient-to-br from-fuchsia-100 to-blue-100 border border-b-fuchsia-300 border-r-fuchsia-300 h-10 w-10/12 flex items-center px-4 rounded-lg cursor-pointer"
                 >
-                    <Link href="#Projects" className="text-xl font-medium w-full">
+                    <Link
+                        href="#Projects"
+                        scroll={false}
+                        replace={true}
+                        className="text-xl font-medium w-full"
+                    >
                         <span>Projects</span>
                     </Link>
                 </div>
