@@ -45,7 +45,7 @@ const ProfileCardLogoComponent = () => {
                 />
                 <div
                     // Clipboard pill
-                    className={`flex justify-center transition-all duration-400 ease-in-out ${
+                    className={`flex justify-center ${
                         isCopied ? "opacity-100" : "invisible opacity-0"
                     }`}
                 >
