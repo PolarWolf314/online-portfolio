@@ -2,9 +2,9 @@ import ProfileCardComponent from "./profile-card-component";
 
 const AboutMe = () => {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-10 md:pb-10 md:h-new-screen items-center">
             <ProfileCardComponent />
-            <div className="p-2.5">
+            <div className="p-2.5 md:order-first">
                 <div className="self-start text-xl font-bold">Hey!</div>
                 <div className="text-justify font-base">
                     I&apos;m Aaron, a 19 year old Software Engineering student

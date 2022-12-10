@@ -7,8 +7,9 @@ module.exports = {
     theme: {
         extend: {
             height: {
-                "new-screen": "calc(100vh - 51px)"
-            }
+                "new-screen": "calc(100vh - 51px)",
+                "new-screen-2": "calc(100vh - 101px)",
+            },
         },
     },
     plugins: [],
