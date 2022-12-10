@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <MyMenuContext.Provider value={{ isMenuOpen, setIsMenuOpen }}>
             <NavBar />
-            <div className="mx-5">
+            <div className="mx-5 md:mx-10">
                 <div
                     /* Anchor for ID becuase of sticky bar */
                     id="About-Me"

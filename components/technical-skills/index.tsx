@@ -28,9 +28,11 @@ const TechnicalSkills = () => {
     return (
         <>
             <div className="flex flex-col gap-y-4">
-                <hr className="bg-black h-0.5 mx-2" />
-                <h1 className="self-center font-bold text-xl">Technical Skills</h1>
-                <div className="flex flex-col gap-5">
+                <hr className="bg-black h-0.5 mx-2 md:hidden" />
+                <h1 className="self-center font-bold text-xl md:text-4xl 2xl:text-6xl">
+                    Technical Skills
+                </h1>
+                <div className="flex flex-wrap gap-5 lg:hidden">
                     <TechnicalSkillsCardComponent
                         categoryName="Front End"
                         items={
@@ -53,6 +55,7 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-1"
                     />
                     <TechnicalSkillsCardComponent
                         categoryName="Back End"
@@ -76,6 +79,7 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-2"
                     />
                     <TechnicalSkillsCardComponent
                         categoryName="Full Stack"
@@ -91,6 +95,7 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-3"
                     />
                     <TechnicalSkillsCardComponent
                         categoryName="DevOps"
@@ -106,6 +111,7 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-4"
                     />
                     <TechnicalSkillsCardComponent
                         categoryName="Database"
@@ -121,6 +127,7 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-5 md:order-6"
                     />
                     <TechnicalSkillsCardComponent
                         categoryName="Non-Web Technologies"
@@ -140,6 +147,7 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-6 md:order-5"
                     />
                     <TechnicalSkillsCardComponent
                         categoryName="Tools"
@@ -167,7 +175,158 @@ const TechnicalSkills = () => {
                                 />
                             </>
                         }
+                        className="order-7"
                     />
+                </div>
+                <div
+                    /* Large Version */ className="hidden lg:grid lg:grid-cols-3 lg:gap-5"
+                >
+                    <div /* Web Related */ className="flex flex-col gap-y-5">
+                        <h3 className="text-3xl 2xl:text-5xl">Web</h3>
+                        <TechnicalSkillsCardComponent
+                            categoryName="Front End"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={reactLogo}
+                                        name="React"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={nextjsLogo}
+                                        name="Next.js"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={tailwindcssLogo}
+                                        name="Tailwind CSS"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={figmaLogo}
+                                        name="Figma"
+                                    />
+                                </>
+                            }
+                        />
+                        <TechnicalSkillsCardComponent
+                            categoryName="Back End"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={javaLogo}
+                                        name="Java"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={pythonLogo}
+                                        name="Python"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={bashLogo}
+                                        name="Bash/ZSH"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={nodejsLogo}
+                                        name="Node.js"
+                                    />
+                                </>
+                            }
+                        />
+                        <TechnicalSkillsCardComponent
+                            categoryName="Full Stack"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={jsLogo}
+                                        name="JavaScript"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={tsLogo}
+                                        name="TypeScript"
+                                    />
+                                </>
+                            }
+                        />
+                    </div>
+                    <div /* Server Related */ className="flex flex-col gap-y-5">
+                        <h3 className="text-3xl 2xl:text-5xl">Server</h3>
+                        <TechnicalSkillsCardComponent
+                            categoryName="DevOps"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={nginxLogo}
+                                        name="nginx"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={cloudflareLogo}
+                                        name="Cloudflare"
+                                    />
+                                </>
+                            }
+                        />
+                        <TechnicalSkillsCardComponent
+                            categoryName="Database"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={firebaseLogo}
+                                        name="Firebase"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={mongodbLogo}
+                                        name="MongoDB"
+                                    />
+                                </>
+                            }
+                        />
+                    </div>
+                    <div /* Other Related */ className="flex flex-col gap-y-5">
+                        <h3 className="text-3xl 2xl:text-5xl">Others</h3>
+                        <TechnicalSkillsCardComponent
+                            categoryName="Non-Web Technologies"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={matlabLogo}
+                                        name="Matlab"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={rLogo}
+                                        name="R"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={clogo}
+                                        name="C"
+                                    />
+                                </>
+                            }
+                        />
+                        <TechnicalSkillsCardComponent
+                            categoryName="Tools"
+                            items={
+                                <>
+                                    <TechnicalSkillsItemComponent
+                                        logo={githubLogo}
+                                        name="GitHub"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={gitLogo}
+                                        name="Git"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={markdownLogo}
+                                        name="Markdown"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={latexLogo}
+                                        name="LaTeX"
+                                    />
+                                    <TechnicalSkillsItemComponent
+                                        logo={mavenLogo}
+                                        name="Maven"
+                                    />
+                                </>
+                            }
+                        />
+                    </div>
                 </div>
             </div>
         </>
