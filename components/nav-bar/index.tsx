@@ -1,4 +1,3 @@
-import { AiOutlineMenu } from "react-icons/ai";
 import Hamburger from "hamburger-react";
 import NavBarMenuComponent from "./nav-bar-menu-component";
 import { useMenuContext } from "../../contexts/menu-context";
@@ -16,8 +15,8 @@ const NavBar = () => {
                     isMenuOpen ? "bg-fuchsia-200" : "bg-fuchsia-400"
                 }`}
             >
-                <span className="text-3xl font-bold self-center">Aaron Guo</span>
-                <span className="self-center cursor-pointer">
+                <span className="text-3xl font-bold self-center md:pl-10">Aaron Guo</span>
+                <span className="self-center cursor-pointer md:invisible">
                     <Hamburger toggled={isMenuOpen} toggle={onClickHandler} />
                 </span>
             </div>
