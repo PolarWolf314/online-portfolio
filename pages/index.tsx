@@ -21,13 +21,13 @@ export default function Home() {
                 <div
                     /* Anchor for ID becuase of sticky bar */
                     id="Skills"
-                    className="-top-[44px] block relative invisible"
+                    className="-top-[54px] block relative invisible"
                 />
                 <TechnicalSkills />
                 <div
                     /* Anchor for ID becuase of sticky bar */
                     id="Projects"
-                    className="-top-[34px] block relative invisible"
+                    className="-top-[40px] block relative invisible"
                 />
                 <Projects />
             </div>
