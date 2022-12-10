@@ -17,7 +17,7 @@ const BadgeComponent = ({ name, className }: BadgeComponentProps) => {
         <img
             src={url}
             alt={name}
-            className={`${className ?? ""} h-5 rounded-lg`}
+            className={`${className ?? ""} h-5 2xl:h-6 rounded-lg`}
         />
     );
 };
