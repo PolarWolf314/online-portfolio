@@ -16,7 +16,7 @@ const ProfileCardComponent = () => {
             </div>
             <div className="font-bold text-3xl md:text-5xl">Aaron Guo</div>
             <div className="text-sm lg:text-xl">
-                Second Year Software Engineering Student
+                Fourth Year Software Engineering Student
             </div>
             <div>
                 <ProfileCardLogoComponent />

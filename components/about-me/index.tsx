@@ -7,7 +7,7 @@ const AboutMe = () => {
             <div className="p-2.5 md:order-first">
                 <div className="self-start text-xl md:text-5xl 2xl:text-8xl font-bold 2xl:font-semibold md:pb-10 2xl:pb-20">Hey!</div>
                 <div className="text-justify md:leading-relaxed lg:text-2xl 2xl:text-3xl">
-                    I&apos;m Aaron, a 20 year old Software Engineering student
+                    I&apos;m Aaron, a 21 year old Software Engineering student
                     at the University of Auckland. I love developing robust,
                     consistent, and applicable software using modern frameworks
                     such as React.
