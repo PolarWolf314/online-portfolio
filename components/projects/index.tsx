@@ -8,6 +8,47 @@ const Projects = () => {
             </h2>
             <div className="grid gap-4 2xl:gap-10 md:grid-cols-2 2xl:grid-cols-3">
                 <ProjectsCardComponent
+                    title="EngiWear Android App"
+                    link="https://github.com/PolarWolf314/softeng-306-project-1"
+                    date="Sept 2023"
+                    content={
+                        <>
+                            This is the the first Keystone Project for my formal
+                            education using Java to create a full stack Android
+                            application using Firebase as a backend. Our team
+                            came first place overall for this project. I was the
+                            main designer of the app, responsible for how it
+                            looks and feels.
+                        </>
+                    }
+                    skills={["java", "android", "firebase", "figma", "github"]}
+                />
+                <ProjectsCardComponent
+                    title="Optimal Scheduler App"
+                    link="https://github.com/PolarWolf314/softeng-306-project-2"
+                    date="Oct 2023"
+                    content={
+                        <>
+                            This is the the second Keystone Project for my
+                            formal education using Java to implement algorithms
+                            such as DFS and A* in ELS and AO state space to
+                            optimally schedule CPU tasks. Our team created a
+                            terminal visualiser—the first of its kind in the
+                            history of this course. We used Docker to automate
+                            the compiling and running of the code, to
+                            consistently track improvements in performance over
+                            time.
+                        </>
+                    }
+                    skills={[
+                        "java",
+                        "android",
+                        "figma",
+                        "github",
+                        "docker",
+                    ]}
+                />
+                <ProjectsCardComponent
                     title="React Websites"
                     link="https://polarwolf314-react-projects-02.netlify.app"
                     date="Dec 2021"

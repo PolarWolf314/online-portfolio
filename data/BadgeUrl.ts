@@ -27,6 +27,9 @@ const BadgeUrl: Record<string, string> = {
     ubuntu: "https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white",
     figma: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white",
     github: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white",
+    android:
+        "https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white",
+    docker: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
 };
 
 export default BadgeUrl;
